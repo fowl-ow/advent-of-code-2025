@@ -2,7 +2,7 @@ import System.Process.Internals (ProcessHandle (waitpidLock))
 
 main :: IO ()
 main = do
-    contents <- readFile "input-1.txt"
+    contents <- readFile "input.txt"
     let ls = lines contents
     print (process ls)
 
